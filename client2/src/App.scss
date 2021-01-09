@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  
+
+  &__header {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+

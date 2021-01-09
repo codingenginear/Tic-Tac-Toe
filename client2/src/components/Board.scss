@@ -1,0 +1,18 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 573px;
+  height: 573px;
+  background-color: salmon;
+  margin-bottom: 1rem;
+
+  &__button {
+    background-color: salmon;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+}

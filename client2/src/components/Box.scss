@@ -1,0 +1,14 @@
+.box {
+  background-color: white;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+  &__p {
+    font-size: 10rem;
+  }
+}

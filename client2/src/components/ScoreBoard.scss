@@ -1,0 +1,15 @@
+.score-board {
+  max-height: 648px;
+  width: 300px;
+  border: 5px solid black;
+  margin-right: 24px;
+  border-radius: 10px;
+  > :nth-child(even) {
+    background-color: white;
+
+  }
+
+  &__header {
+    padding: 1rem;
+  }
+}
