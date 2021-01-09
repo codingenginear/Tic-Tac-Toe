@@ -63,7 +63,7 @@ class Board extends Component {
     const updatedGame = {
       results: this.state.currentPlayer
     }
-    axios.put("http://localhost:8090/games/" + gameId, updatedGame)
+    axios.put(process.env.REACT_APP_API_URL + "/games/" + gameId, updatedGame)
     .then(response => {
       this.props.fetchGameData();
     })

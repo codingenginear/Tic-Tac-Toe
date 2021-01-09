@@ -19,7 +19,7 @@ class App extends Component {
   fetchGameData = (gameId) => {
     const id = gameId || "";
     axios
-      .get('http://localhost:8090/games')
+      .get(process.env.REACT_APP_API_URL + '/games')
       .then(response => {
         console.log(response.data);
         this.setState({

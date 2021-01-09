@@ -23,7 +23,7 @@ class NewGameForm extends Component {
     }
     const { fetchGameData, setCurrentGameId } = this.props;
     axios
-      .post("http://localhost:8090/games", newGame)
+      .post(process.env.REACT_APP_API_URL + "/games", newGame)
       .then((response) => {
         fetchGameData(response.data.id);
       })
