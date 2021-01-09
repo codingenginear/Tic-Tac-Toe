@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const fs = require('fs');
 const uniqid = require('uniqid');
-const PORT = 8090;
+const PORT = process.env.PORT || 8090;
 const gamesFilePath = './games.json';
 
 const readGamesFile = () => {
