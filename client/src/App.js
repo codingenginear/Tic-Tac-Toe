@@ -16,6 +16,7 @@ class App extends Component {
     currentGameId: ""
   }
   
+  
   fetchGameData = (gameId) => {
     const id = gameId || "";
     axios
@@ -38,8 +39,9 @@ class App extends Component {
       showForm: !this.state.showForm
     });
   }
-
+  
   render() {
+    console.log(this.state.scores)
     if(this.state.scores.length === 0) {
       return "";
     }
